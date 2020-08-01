@@ -1,4 +1,3 @@
-# flickr_test# mahesh.innoventes
 
 # Flickr Web Application
 
