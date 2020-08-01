@@ -14,13 +14,9 @@ app.use(function (req, res, next) {
   if (allowedOrigins.indexOf(req.headers.origin) !== -1) {
     res.header("Access-Control-Allow-Origin", req.headers.origin);
   }
-  res.header("Access-Control-Expose-Headers", "Content-Disposition, namespace");
+  res.header("Access-Control-Expose-Headers", "Content-Disposition");
   res.header("Access-Control-Allow-Credentials", "true");
 
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Content-Disposition,Content-Length,Cache-Control,Content-Type,Origin,Accept,Set-Cookie,authorization,namespace, cookies,cookie"
-  );
   res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
   if ("OPTIONS" === req.method) {
     return res.sendStatus(200);
