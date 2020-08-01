@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BsCardImage } from "react-icons/bs";
-import { AiOutlineTeam, AiOutlinePlus } from "react-icons/ai";
+import { AiOutlineTeam } from "react-icons/ai";
 import { connect } from "react-redux";
 import { setSearchFor } from "../../redux/actions";
 import Axios from "axios";

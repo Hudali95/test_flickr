@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { AiOutlineSearch } from "react-icons/ai";
 
 import HomeSuggestionBox from "./homeSuggestionBox";
@@ -22,7 +22,7 @@ class index extends Component {
     };
   }
   hangleChange = (e) => {
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       this.setState({ showSuggestions: false });
     }
     if (!this.state.showSuggestions) {

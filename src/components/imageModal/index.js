@@ -25,6 +25,7 @@ export default class index extends Component {
             onClick={() => {
               window.open(this.props.src);
             }}
+            alt="Flickr Pic"
           ></img>
           <div className="middleRow d-flex align-items-center">
             <div className="w-50 p-2">Description</div>

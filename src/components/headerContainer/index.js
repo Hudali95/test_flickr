@@ -3,7 +3,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import logoSrc from "../../assets/flickr2.png";
 import { AiOutlineSearch } from "react-icons/ai";
 import Axios from "axios";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { setSearchFor, searchQuery } from "../../redux/actions";
@@ -22,7 +22,7 @@ class index extends Component {
     };
   }
   hangleChange = (e) => {
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       this.setState({ showSuggestions: false });
     }
     if (!this.state.showSuggestions) {

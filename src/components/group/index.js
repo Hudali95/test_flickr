@@ -9,7 +9,7 @@ import Img from "react-cool-img";
 
 import loadingImage from "../../assets/loading.gif";
 import errorImage from "../../assets/defaultGroup.png";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import Axios from "axios";
 import Loader from "../loaderComponent.";
 

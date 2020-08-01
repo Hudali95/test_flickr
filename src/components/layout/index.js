@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Group from "../group";
 import Gallery from "../gallery";
@@ -9,8 +9,6 @@ import ImageModal from "../imageModal";
 import GroupComponent from "../groupComponent";
 import Home from "../home";
 import HeaderContainer from "../headerContainer";
-
-const axios = require("axios");
 
 export default class index extends Component {
   constructor(props) {

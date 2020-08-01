@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Container } from "react-bootstrap";
-import ReactDOM from "react-dom";
+import { Row, Col } from "react-bootstrap";
 
 import Img from "react-cool-img";
 
