@@ -1,0 +1,3 @@
+allowedOrigins: ["http://localhost:3000"]
+appKey: "f838661245136bd4728b78c048632b12"
+secretKey: "3782b0896be4ec13"

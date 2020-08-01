@@ -1,0 +1,425 @@
+.headerContainer {
+  background-color: rgb(21, 21, 23);
+  height: 50px;
+  color: #fff;
+}
+
+input {
+  font-size: 14px;
+  line-height: 20px;
+  border: 0;
+  background-color: #c9c9c9;
+  border-radius: 2px;
+  padding-left: 5px;
+  width: 200px;
+}
+
+.searchBarWrapper {
+  background-color: #c9c9c9;
+  color: rgba(21, 21, 23, 0.95);
+  padding: 5px 0px 5px 0px;
+  position: relative;
+  border-radius: 2px;
+}
+
+input:hover,
+input:focus {
+  color: rgba(21, 21, 23, 0.95);
+  outline: 0;
+}
+
+input:focus {
+  background-color: #fff;
+}
+
+.searchBarWrapper:focus-within {
+  background-color: #fff;
+  color: rgba(21, 21, 23, 0.95);
+}
+
+.searchButton {
+  background-color: #128fdc;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.suggestionsBox,
+.homesSuggestionBox {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  top: 35px;
+  max-height: 231px;
+  font-size: 12px;
+  overflow: auto;
+  padding: 5px 0px 5px 0px;
+  left: 0;
+  margin: 0;
+  z-index: 999;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
+}
+
+.suggestionsBoxRow {
+  height: 30px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.315);
+}
+
+.suggestionsBoxRow:hover {
+  background-color: rgba(0, 0, 0, 0.055);
+  color: #212124;
+}
+
+.chooseBox {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 10px;
+  padding: 4px;
+  width: 50%;
+}
+
+/* home */
+.homeWrapper {
+  height: 60vh;
+}
+
+.homeSearchBarContainer {
+  position: relative;
+  height: 50px;
+  width: 60%;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.homeSearchIcon {
+  width: 10%;
+}
+
+.homeSearchInputWrapper {
+  width: 90%;
+}
+
+.homeSearchInput {
+  background-color: #fff;
+}
+
+.hover2,
+.hover1 {
+  position: absolute;
+  z-index: -999;
+  border-radius: 2px;
+  width: 100%;
+  transform: translateY(-100%);
+  visibility: hidden;
+  transition: visibility 0.5s ease-in-out;
+}
+
+.homesSuggestionBox {
+  top: 100%;
+  min-height: 200%;
+  margin-top: 5px;
+  border-radius: 0 0 4px 4px;
+  animation-name: suggestionDrop;
+  animation-duration: 0.3s;
+}
+
+.homesSuggestionBoxRow {
+  padding-left: calc(10% + 5px);
+  font-size: 12px;
+}
+
+.homesSuggestionBoxRow:hover {
+  background-color: rgba(0, 0, 0, 0.055);
+}
+
+.homeButtons {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  padding: 4px;
+  width: 50%;
+}
+
+.homeSearchBarContainer:hover .hover1,
+.homeSearchBarContainer:focus-within .hover1 {
+  visibility: visible;
+  animation-name: searchHover1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.homeSearchBarContainer:hover .hover2,
+.homeSearchBarContainer:focus-within .hover2 {
+  visibility: visible;
+  animation-name: searchHover2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* .homeSearchBarContainer:focus-within .homesSuggestionBox {
+  display: block;
+} */
+
+/* group */
+.groupHeading {
+  margin: 10vh 0 5px 0;
+  font-size: 18px;
+}
+
+.showReslutsCont {
+  font-size: 15px;
+  color: rgb(138, 138, 141);
+}
+
+.resultCard {
+  height: 90px;
+  width: 80%;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 11pt;
+  color: #898989;
+  padding: 12px 0px 12px 0px;
+}
+
+.groupProfile {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #afb7bc, 0 0 0 5px hsl(0, 0%, 90%);
+}
+
+.groupProfile:hover {
+  box-shadow: 0 0 0 4px rgb(155, 162, 167), 0 0 0 7px hsl(0, 0%, 90%);
+}
+
+.groupName {
+  color: #212124;
+  line-height: 110%;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.groupSince {
+  line-height: 1.75;
+  font-size: 10pt;
+}
+
+.groupIcons {
+  font-size: 14pt;
+  /* width: 33.33%; */
+}
+
+.textContent {
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 10pt;
+}
+
+.groupButton {
+  background-color: #128fdc;
+  color: #fff;
+  height: 40%;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.groupButton:hover {
+  background-color: #1c9be9;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* gallery */
+.imageContainer {
+  height: 177px;
+  margin: 0px 0px 10px 15px;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* modal */
+
+.modalHeader {
+  color: rgb(138, 138, 141);
+  border: none;
+}
+
+.modalfooter {
+  display: none;
+}
+
+.modal-title {
+  font-size: 15px !important;
+}
+
+button.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  /* background-color: #fff; */
+  /* text-shadow: 0 1px 0 #fff; */
+  opacity: 0.5;
+}
+
+button.close:hover {
+  color: #0f0f0fb7 !important;
+  text-decoration: none;
+}
+
+button.close:focus {
+  outline: none;
+}
+
+.hoverBottom {
+  /* height: 40%; */
+  background-color: rgba(33, 33, 36, 0.733);
+  position: absolute;
+  width: 100%;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+}
+
+.imageContainer:hover .hoverBottom {
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+.imageTitle {
+  color: #fff;
+  padding-left: 4px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.authorName {
+  color: rgb(138, 138, 141);
+  padding-left: 4px;
+  font-size: 13px;
+  /* font-weight: 400; */
+}
+
+.imageDesc {
+  max-height: 100px;
+  padding: 0 5px 0 5px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  color: rgb(138, 138, 141);
+  /* font-weight: 300 !important; */
+  font-size: 14px;
+  text-align: justify;
+}
+
+.spanContent {
+  color: rgb(138, 138, 141);
+  font-size: 12px;
+}
+
+.text-black {
+  color: rgb(138, 138, 141);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.modal-content {
+  border-radius: 2px !important;
+  background-color: #212124;
+  color: rgb(138, 138, 141);
+  border: none;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
+}
+
+.bliking {
+  font-weight: 200 !important;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.backImage {
+  position: fixed;
+  z-index: -9999;
+  height: 100vh;
+  width: 100vw;
+}
+
+.backImage img {
+  /* filter: blur(-1px); */
+}
+
+.typer h2 {
+  color: rgb(12, 21, 29);
+  text-shadow: 1px 1px 3px rgb(31, 130, 211, 0.2), 2px 1px 3px aliceblue, 3px 2px 2px rgb(55, 131, 197);
+}
+
+/* animation */
+@keyframes searchHover1 {
+  0% {
+    box-shadow: 0 0 0 1px rgba(30, 39, 46, 0.8), 0 0 0 7px rgba(30, 39, 46, 0.1);
+    opacity: 0.3;
+  }
+
+  50% {
+    box-shadow: 0 0 0 7px rgba(30, 39, 46, 0.8), 0 0 0 14px rgba(155, 175, 190, 0.4);
+  }
+
+  100% {
+    box-shadow: 0 0 0 2px rgba(30, 39, 46, 0.8), 0 0 0 10px rgba(30, 39, 46, 0.1);
+    opacity: 0.1;
+  }
+}
+
+@keyframes searchHover2 {
+  0% {
+    box-shadow: 0 0 0 3px rgba(30, 39, 46, 0.8),
+      0 0 0 10px rgba(148, 178, 201, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 0 5px rgba(30, 39, 46, 0.8),
+      0 0 0 20px rgba(30, 39, 46, 0.3);
+  }
+
+  100% {
+    box-shadow: 0 0 0 2px rgba(30, 39, 46, 0.8),
+      0 0 0 10px rgba(30, 39, 46, 0.2);
+  }
+}
+
+@keyframes suggestionDrop {
+  from {
+    top: -5%;
+    opacity: 0;
+  }
+
+  to {
+    top: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
