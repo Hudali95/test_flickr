@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Group from "../group";
 import Gallery from "../gallery";
 import ImageModal from "../imageModal";
-import GroupComponent from "../groupComponent";
+// import GroupComponent from "../groupComponent";
+import NoRouteComp from "../noRouteComponent";
 import Home from "../home";
 import HeaderContainer from "../headerContainer";
 
@@ -68,9 +69,12 @@ export default class index extends Component {
                 />
               </Route>
 
-              <Route path="/groups/:id">
-                <GroupComponent />
+              <Route path="">
+                <NoRouteComp />
               </Route>
+              {/* <Route path="/groups/:id">
+                <GroupComponent />
+              </Route> */}
             </Switch>
           </Container>
           {this.state.show && (

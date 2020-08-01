@@ -357,15 +357,22 @@ button.close:focus {
   z-index: -9999;
   height: 100vh;
   width: 100vw;
+
 }
 
-.backImage img {
-  /* filter: blur(-1px); */
-}
+
 
 .typer h2 {
   color: rgb(12, 21, 29);
   text-shadow: 1px 1px 3px rgb(31, 130, 211, 0.2), 2px 1px 3px aliceblue, 3px 2px 2px rgb(55, 131, 197);
+}
+
+/* noroute */
+.noRouteWrapper {
+  height: 60vh;
+  width: 100%;
+  color: #fd0404b6;
+  background-color: #f79c9c25;
 }
 
 /* animation */
